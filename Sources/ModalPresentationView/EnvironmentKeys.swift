@@ -16,7 +16,7 @@ enum ModalPresentationActionKey: EnvironmentKey {
   }
 }
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
   var modalDismissAction: () -> Void {
     get { self[ModalDismissActionKey.self] }
     set { self[ModalDismissActionKey.self] = newValue }
